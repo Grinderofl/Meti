@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MetiService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MetiService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="AuthenticationStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EmptyUserName" />
+      <xs:enumeration value="EmptyPassword" />
+      <xs:enumeration value="InvalidUserName" />
+      <xs:enumeration value="InvalidPassword" />
+      <xs:enumeration value="InvalidUserNameOrPassword" />
+      <xs:enumeration value="Success" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AuthenticationStatus" nillable="true" type="tns:AuthenticationStatus" />
+  <xs:simpleType name="RegisterStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EmptyUserName" />
+      <xs:enumeration value="EmptyEmail" />
+      <xs:enumeration value="EmptyPassword" />
+      <xs:enumeration value="UserExists" />
+      <xs:enumeration value="EmailExists" />
+      <xs:enumeration value="Success" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RegisterStatus" nillable="true" type="tns:RegisterStatus" />
+</xs:schema>
