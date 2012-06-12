@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:51036/AuthService.svc?xsd=xsd1" filename="AuthService.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:51036/AuthService.svc?xsd=xsd0" filename="AuthService0.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:51036/AuthService.svc?xsd=xsd2" filename="AuthService1.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:51036/AuthService.svc?xsd=xsd4" filename="AuthService2.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost:51036/AuthService.svc?xsd=xsd3" filename="AuthService3.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost:51036/AuthService.svc?wsdl" filename="AuthService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/MetiService/AuthService.svc?xsd=xsd4" filename="AuthService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost/MetiService/AuthService.svc?wsdl" filename="AuthService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/MetiService/AuthService.svc?xsd=xsd0" filename="AuthService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/MetiService/AuthService.svc?xsd=xsd3" filename="AuthService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/MetiService/AuthService.svc?xsd=xsd1" filename="AuthService2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://localhost/MetiService/AuthService.svc?xsd=xsd2" filename="AuthService3.xsd" />
   </Results>
 </DiscoveryClientResultsFile>

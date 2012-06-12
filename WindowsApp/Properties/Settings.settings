@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="WindowsApp_localhost_AuthService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:51036/AuthService.svc</Value>
+      <Value Profile="(Default)">http://localhost/MetiService/AuthService.svc</Value>
     </Setting>
   </Settings>
 </SettingsFile>

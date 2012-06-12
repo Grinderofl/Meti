@@ -153,10 +153,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:51036/AuthService.svc%3fwsdl">
+    <WebReferenceUrl Include="http://localhost/MetiService/AuthService.svc%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\localhost\</RelPath>
-      <UpdateFromURL>http://localhost:51036/AuthService.svc%3fwsdl</UpdateFromURL>
+      <UpdateFromURL>http://localhost/MetiService/AuthService.svc%3fwsdl</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
