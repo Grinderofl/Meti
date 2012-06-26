@@ -22,7 +22,14 @@ namespace WindowsApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// AuthService module
+        /// </summary>
         private AuthService service;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -32,6 +39,11 @@ namespace WindowsApp
             //NotifyIcon.ShowCustomBalloon(balloon, PopupAnimation.Scroll, 10000);
         }
 
+        /// <summary>
+        /// Handles the Click event of the RegisterButton control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.Windows.RoutedEventArgs"/> instance containing the event data.</param>
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(UserName.Text) || string.IsNullOrEmpty(Password.Text))
@@ -48,6 +60,11 @@ namespace WindowsApp
 
         }
 
+        /// <summary>
+        /// Services the on authenticate completed.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="registerCompletedEventArgs">The <see cref="WindowsApp.localhost.RegisterCompletedEventArgs"/> instance containing the event data.</param>
         private void ServiceOnAuthenticateCompleted(object sender, RegisterCompletedEventArgs registerCompletedEventArgs)
         {
             if (registerCompletedEventArgs.RegisterResult == RegisterStatus.Success)

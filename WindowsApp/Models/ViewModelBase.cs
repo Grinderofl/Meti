@@ -14,6 +14,10 @@ namespace WindowsApp.Models
         public event PropertyChangedEventHandler PropertyChanged;
         public abstract void Dispose();
 
+        /// <summary>
+        /// Called when [property changed].
+        /// </summary>
+        /// <param name="propertyName">Name of the property.</param>
         protected virtual void OnPropertyChanged(string propertyName)
         {
             VerifyPropertyName(propertyName);
@@ -25,6 +29,10 @@ namespace WindowsApp.Models
             }
         }
 
+        /// <summary>
+        /// Verifies the name of the property.
+        /// </summary>
+        /// <param name="propertyName">Name of the property.</param>
         [Conditional("DEBUG")]
         [DebuggerStepThrough]
         public void VerifyPropertyName(string propertyName)

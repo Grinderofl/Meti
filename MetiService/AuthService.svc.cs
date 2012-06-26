@@ -21,11 +21,19 @@ namespace MetiService
     {
         private DbContext _context;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AuthService"/> class.
+        /// </summary>
         public AuthService()
         {
             _context = new DataContext();
         }
 
+        /// <summary>
+        /// Gets the session.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns></returns>
         public Guid GetSession(User user)
         {
             var status = Authenticate(user);
@@ -40,6 +48,11 @@ namespace MetiService
             return session.UUID;
         }
 
+        /// <summary>
+        /// Authenticates the specified user.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns></returns>
         public AuthenticationStatus Authenticate(User user)
         {
             if(user.Name.IsNullOrWhiteSpace())
@@ -58,6 +71,11 @@ namespace MetiService
             return AuthenticationStatus.InvalidUserNameOrPassword;
         }
 
+        /// <summary>
+        /// Registers the specified user.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns></returns>
         public RegisterStatus Register(User user)
         {
             if(user.Name.IsNullOrWhiteSpace())

@@ -14,6 +14,12 @@ namespace MetiShared
             SHA512
         }
 
+        /// <summary>
+        /// Gets the hash.
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <param name="hashType">Type of the hash.</param>
+        /// <returns></returns>
         public static string GetHash(string text, HashType hashType)
         {
             string hashString;
@@ -38,12 +44,24 @@ namespace MetiShared
             return hashString;
         }
 
+        /// <summary>
+        /// Checks the hash.
+        /// </summary>
+        /// <param name="original">The original.</param>
+        /// <param name="hashString">The hash string.</param>
+        /// <param name="hashType">Type of the hash.</param>
+        /// <returns></returns>
         public static bool CheckHash(string original, string hashString, HashType hashType)
         {
             string originalHash = GetHash(original, hashType);
             return (originalHash == hashString);
         }
 
+        /// <summary>
+        /// Gets the Md5 hash.
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns></returns>
         private static string GetMD5(string text)
         {
             UnicodeEncoding UE = new UnicodeEncoding();
@@ -61,6 +79,11 @@ namespace MetiShared
             return hex;
         }
 
+        /// <summary>
+        /// Gets the SHA1 hash.
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns></returns>
         private static string GetSHA1(string text)
         {
             UnicodeEncoding UE = new UnicodeEncoding();
