@@ -63,6 +63,7 @@
     <Compile Include="Library\FancyBalloon.xaml.cs">
       <DependentUpon>FancyBalloon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModelBase.cs" />
     <Compile Include="SystemControls.cs" />
     <Compile Include="Web References\localhost\Reference.cs">
       <AutoGen>True</AutoGen>
